@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(8, 154, 245);
+}
+.Container {
+    width: 80%;
+    height: 400px;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+
+.Container h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    animation: blink-text 5s linear infinite;
+}
+@keyframes blink-text {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+textarea {
+    width: 600px;
+    height: 250px;
+    background: #403d84;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+textarea::placeholder {
+    font-size: 16px;
+    color: #fff;
+}
+
+.speechbox {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+button {
+    background: #ff2963;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button img {
+    width: 16px;
+    margin-right: 10px;
+}
+
+select {
+    flex: 1;
+    color: #fff;
+    background: #403d84;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+}
